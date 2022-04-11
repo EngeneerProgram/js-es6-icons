@@ -45,6 +45,6 @@ let mammiferi = animals.filter((animali)=>{
     return (animali.classe == "mammiferi");
 })
 
-for(let i = 0; mammiferi.length; i++){
+for(let i = 0; i<mammiferi.length; i++){
     console.log(`Gli animali presenti nella lista che rappresentano i mammiferi sono : ${mammiferi[i].nome}`);
 }

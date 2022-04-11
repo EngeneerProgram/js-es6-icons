@@ -10,6 +10,8 @@ const parole_minuscole = [];
 for(let i = 0; i<parole.length; i++){
    //console.log(parole[i].toLowerCase());
    parole_minuscole.push(parole[i].toLowerCase());
+   parole_minuscole.push(parole[i].charAt(0).toUpperCase().slice(0));
+   
 }
 
 console.log(parole_minuscole);

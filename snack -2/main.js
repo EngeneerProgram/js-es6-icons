@@ -5,19 +5,27 @@ A partire da un array di stringhe, crea un secondo array formattando le stringhe
 //creazine array
 const parole = ["GIOVANNI", "LUCA", "MIRKO", "OSSO", "PADELLA"];
 console.log(parole)
-const parole_minuscole = [];
+const parole_minuscole_iniziale_maiuscola = [];
 //conversione in minuscolo
 for(let i = 0; i<parole.length; i++){
+    console.log(parole[i])
    //console.log(parole[i].toLowerCase());
-   parole_minuscole.push(parole[i].toLowerCase());
-   parole_minuscole.push(parole[i].charAt(0).toUpperCase().slice(0));
+    let trasforma_parola = parole[i].toLowerCase();
+
+    let iniziale_maiuscola = trasforma_parola[i].toUpperCase(0)+ trasforma_parola.slice(1);
+
+    // console.log(iniziale_maiuscola);
+    // console.log(trasforma_parola);
+    
+    parole_minuscole_iniziale_maiuscola.push(iniziale_maiuscola);
+  
    
 }
 
-console.log(parole_minuscole);
 
-for(let i = 0; i<parole_minuscole.length; i++){
-    console.log(parole_minuscole[i]);
+
+for(let i = 0; i<parole_minuscole_iniziale_maiuscola.length; i++){
+    console.log(parole_minuscole_iniziale_maiuscola[i]);
 }
 
 

@@ -12,7 +12,7 @@ for(let i = 0; i<parole.length; i++){
    //console.log(parole[i].toLowerCase());
     let trasforma_parola = parole[i].toLowerCase();
 
-    let iniziale_maiuscola = trasforma_parola[i].toUpperCase(0)+ trasforma_parola.slice(1);
+    let iniziale_maiuscola = trasforma_parola[0].toUpperCase(0)+ trasforma_parola.slice(1);
 
     // console.log(iniziale_maiuscola);
     // console.log(trasforma_parola);
